@@ -5,7 +5,7 @@ const ad = document.getElementById("Address");
 
 async function getData(lat, long) {
   const promise = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=b1a2ab98ce3b41f49cb164110233006&q=${lat},${long}&aqi=yes`
+    `https://api.weatherapi.com/v1/current.json?key=b1a2ab98ce3b41f49cb164110233006&q=${lat},${long}&aqi=yes`
   );
   return await promise.json();
 }
